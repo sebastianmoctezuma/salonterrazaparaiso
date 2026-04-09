@@ -405,8 +405,17 @@ nav.scrolled {
 }
 
 .service-icon {
-    font-size: 3rem;
     margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-icon img {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    display: block;
 }
 
 .service-card h3 {
@@ -474,6 +483,7 @@ nav.scrolled {
     object-fit: contain;
     display: block;
 }
+
 /* Footer */
 footer {
     background: #0a0a0a;
@@ -567,6 +577,7 @@ footer {
         display: flex;
     }
 }
+
 /* Form Section */
 .form-section {
     padding: 6rem 2rem;

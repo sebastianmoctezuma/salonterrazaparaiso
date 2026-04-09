@@ -92,7 +92,7 @@
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="imagenes/imagen6.jpeg" alt="aaaaaaa">
+                <img src="imagenes/imagen6.jpeg" alt="Eventos nocturnos">
                 <div class="gallery-overlay">
                     <h3>Eventos nocturnos</h3>
                     <p>Ambiente elegante para celebrar tus mejores momentos</p>
@@ -107,7 +107,6 @@
         <p class="promotions-subtitle">¡Aprovecha nuestros paquetes !</p>
         
         <div class="promotions-grid">
-            <!-- Promoción 1 - EDITA EL src CON TU IMAGEN -->
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo1.jpg" alt="Promoción 1">
@@ -120,7 +119,6 @@
                 </div>
             </div>
 
-            <!-- Promoción 2 - EDITA EL src CON TU IMAGEN -->
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo2.jpg" alt="Promoción 2">
@@ -133,7 +131,6 @@
                 </div>
             </div>
 
-            <!-- Promoción 3 - EDITA EL src CON TU IMAGEN -->
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo3.jpg" alt="Promoción 3">
@@ -142,11 +139,10 @@
                 <div class="promo-content">
                     <h3>Paquete alberca</h3>
                     <p>Incluye alberca, terraza con asador, barra, baños, bocina y mobiliario </p>
-                    <span class="promo-price"> Hasta 50 personas</span>
+                    <span class="promo-price">Hasta 50 personas</span>
                 </div>
             </div>
 
-            <!-- Promoción 4 - EDITA EL src CON TU IMAGEN -->
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo4.jpg" alt="Promoción 4">
@@ -170,117 +166,131 @@
         <h2>Servicios que Ofrecemos</h2>
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon">💍</div>
+                <div class="service-icon"><img src="imagenes/anillo.png" alt="Anillo"></div>
                 <h3>Bodas</h3>
                 <p>Celebra el día más importante de tu vida en un ambiente mágico y romántico</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🎉</div>
+                <div class="service-icon"><img src="imagenes/fiesta.png" alt="Fiesta"></div>
                 <h3>XV Años</h3>
                 <p>Una celebración única para un momento irrepetible</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🏢</div>
+                <div class="service-icon"><img src="imagenes/edificio.png" alt="Edificio"></div>
                 <h3>Eventos Corporativos</h3>
                 <p>Espacios profesionales para tus reuniones de negocio</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🎂</div>
+                <div class="service-icon"><img src="imagenes/pastel.png" alt="pastel"></div>
                 <h3>Celebraciones</h3>
                 <p>Cumpleaños, aniversarios y fiestas familiares</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🏊</div>
+                <div class="service-icon"><img src="imagenes/alberca.png" alt="Alberca"></div>
                 <h3>Alberca</h3>
                 <p>Instalaciones recreativas para todos los eventos</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">🎵</div>
+                <div class="service-icon"><img src="imagenes/musica.png" alt="Musica"></div>
                 <h3>Audio y Más</h3>
                 <p>Equipamiento completo para tu evento perfecto</p>
             </div>
         </div>
     </section>
 
+    <!-- Form Section -->
     <section class="form-section fade-in" id="formulario">
-    <div class="form-container">
-        <h2>Solicita tu cotización</h2>
-        <p class="form-subtitle">Cuéntanos un poco sobre tu evento y nos pondremos en contacto contigo</p>
+        <div class="form-container">
+            <h2>Solicita tu cotización</h2>
+            <p class="form-subtitle">Cuéntanos un poco sobre tu evento y nos pondremos en contacto contigo</p>
 
-        <form class="contact-form">
-            <div class="form-grid">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <form class="contact-form" name="cotizacion" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="cotizacion">
+                
+                <p style="display: none;">
+                    <label>No llenar esto: <input name="bot-field"></label>
+                </p>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="evento">Tipo de evento</label>
+                        <select id="evento" name="evento" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="boda">Boda</option>
+                            <option value="xv">XV Años</option>
+                            <option value="cumple">Cumpleaños</option>
+                            <option value="corporativo">Evento corporativo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="personas">Número de personas</label>
+                        <input type="number" id="personas" name="personas" placeholder="Ej. 100" min="1">
+                    </div>
                 </div>
 
                 <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí los detalles de tu evento"></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="evento">Tipo de evento</label>
-                    <select id="evento" name="evento" required>
-                        <option value="">Selecciona una opción</option>
-                        <option value="boda">Boda</option>
-                        <option value="xv">XV Años</option>
-                        <option value="cumple">Cumpleaños</option>
-                        <option value="corporativo">Evento corporativo</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
+                <button type="submit" class="form-button">Enviar solicitud</button>
 
-                <div class="form-group">
-                    <label for="personas">Número de personas</label>
-                    <input type="number" id="personas" name="personas" placeholder="Ej. 100" min="1">
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí los detalles de tu evento"></textarea>
-            </div>
-
-            <button type="submit" class="form-button">Enviar solicitud</button>
-            <p id="form-message" style="display:none; color: green; margin-top: 1rem; font-weight: bold; text-align:center;">
-    ¡Tu solicitud fue enviada correctamente! Nos pondremos en contacto contigo pronto.
-</p>
-        </form>
-    </div>
-</section>
+                <p id="form-message" style="display:none; margin-top: 1rem; font-weight: bold; text-align:center;">
+                    ¡Tu solicitud fue enviada correctamente! Nos pondremos en contacto contigo pronto.
+                </p>
+            </form>
+        </div>
+    </section>
 
     <!-- Contact Section -->
     <section class="contact fade-in" id="contacto">
         <div class="contact-container">
             <h2>¡Contáctanos!</h2>
             <p style="font-size: 1.3rem; margin-bottom: 2rem;">Estamos listos para hacer realidad el evento de tus sueños</p>
+
             <div class="contact-info">
-                    <a href="https://wa.me/527712664272" target="_blank">
                 <div class="contact-item">
-                    <div class="social-icon"><img src="imagenes/iconowhatsap.png" alt="WhatsApp"></div>
+                    <div class="social-icon">
+                        <img src="imagenes/iconowhatsap.png" alt="WhatsApp">
+                    </div>
                     <a href="https://wa.me/527712664272" target="_blank">771 266 4272</a>
                 </div>
+
                 <div class="contact-item">
-                        <a href="https://www.instagram.com/terrazaparaiso_salon?igsh=ano3dzRvZzM3dnJq" target="_blank">
-                    <div class="social-icon"><img src="imagenes/iconoig.png" alt="Instagram"></div>
+                    <div class="social-icon">
+                        <img src="imagenes/iconoig.png" alt="Instagram">
+                    </div>
                     <a href="https://www.instagram.com/terrazaparaiso_salon?igsh=ano3dzRvZzM3dnJq" target="_blank">@salonterraza_paraiso</a>
                 </div>
+
                 <div class="contact-item">
-                    <a href="https://www.facebook.com/share/1CfCWRKmfH/?mibextid=wwXIfr" target="_blank">
-                    <div class="social-icon"><img src="imagenes/iconofacebook.webp" alt="FaceBook"></div>
+                    <div class="social-icon">
+                        <img src="imagenes/iconofacebook.webp" alt="Facebook">
+                    </div>
                     <a href="https://www.facebook.com/share/1CfCWRKmfH/?mibextid=wwXIfr" target="_blank">Terraza Paraíso</a>
                 </div>
-                 <div class="contact-item">
-                    <a href="https://maps.app.goo.gl/d6CtL6HZdUcxMh66A" target="_blank">
-                    <div class="social-icon"><img src="imagenes/mapa.png" alt="Mapa"></div>
+
+                <div class="contact-item">
+                    <div class="social-icon">
+                        <img src="imagenes/mapa.png" alt="Mapa">
+                    </div>
                     <a href="https://maps.app.goo.gl/d6CtL6HZdUcxMh66A" target="_blank">Ver ubicacion en maps</a>
                 </div>
             </div>
         </div>
     </section>
-   
-
 
     <!-- Footer -->
     <footer>

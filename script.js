@@ -34,7 +34,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth',
                 block: 'start'
             });
-            // Close mobile menu if open
+
             document.getElementById('navLinks').classList.remove('active');
         }
     });
@@ -54,19 +54,50 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// Netlify form submit
 const form = document.querySelector('.contact-form');
 const formMessage = document.getElementById('form-message');
 
 if (form) {
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async function(e) {
         e.preventDefault();
 
-        formMessage.style.display = 'block';
+        const submitButton = form.querySelector('.form-button');
+        submitButton.disabled = true;
+        submitButton.textContent = 'Enviando...';
 
-        form.reset();
+        try {
+            const formData = new FormData(form);
 
-        setTimeout(() => {
-            formMessage.style.display = 'none';
-        }, 5000);
+            const response = await fetch('/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(formData).toString()
+            });
+
+            if (response.ok) {
+                formMessage.style.display = 'block';
+                formMessage.style.color = 'green';
+                formMessage.textContent = '¡Tu solicitud fue enviada correctamente! Nos pondremos en contacto contigo pronto.';
+                form.reset();
+
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            } else {
+                formMessage.style.display = 'block';
+                formMessage.style.color = 'red';
+                formMessage.textContent = 'Hubo un problema al enviar la solicitud. Intenta nuevamente.';
+            }
+        } catch (error) {
+            formMessage.style.display = 'block';
+            formMessage.style.color = 'red';
+            formMessage.textContent = 'Error de conexión. Intenta nuevamente.';
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Enviar solicitud';
+        }
     });
 }
