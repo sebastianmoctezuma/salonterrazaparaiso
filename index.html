@@ -32,7 +32,7 @@
     <section class="hero" id="inicio">
         <div class="hero-content">
             <h1>Celebra tu Evento de forma inolvidable</h1>
-            <p class="subtitle">Celebra en un espacio único con salón, alberca y jardín</p>
+            <p class="subtitle">Vivelo en un espacio único con salón, alberca y jardín</p>
             <a href="#contacto" class="cta-button">¡Contáctanos Ahora!</a>
         </div>
     </section>
@@ -111,12 +111,12 @@
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo1.jpg" alt="Promoción 1">
-                    <div class="promo-badge">¡Oferta!</div>
+                    <div class="promo-badge">Ideal para eventos</div>
                 </div>
                 <div class="promo-content">
-                    <h3>Ideal para eventos</h3>
-                    <p>Incluye salón techado, jardín, baños, cocina, enfriador, bocina y espacio para hasta 180 personas</p>
-                    <span class="promo-price">Desde $XX,XXX</span>
+                    <h3>Salon + area verde</h3>
+                    <p>Incluye salón techado, jardín, baños, cocina, enfriador y bocina </p>
+                    <span class="promo-price">Hasta 180 personas</span>
                 </div>
             </div>
 
@@ -128,8 +128,8 @@
                 </div>
                 <div class="promo-content">
                     <h3>Alberca + area verde</h3>
-                    <p>Incluye alberca, jardín, terraza con asador, barra, baños y mobiliario para hasta 80 personas</p>
-                    <span class="promo-price">Desde $XX,XXX</span>
+                    <p>Incluye alberca, jardín, terraza con asador, barra, baños y mobiliario</p>
+                    <span class="promo-price">Hasta 80 personas</span>
                 </div>
             </div>
 
@@ -141,8 +141,8 @@
                 </div>
                 <div class="promo-content">
                     <h3>Paquete alberca</h3>
-                    <p>Incluye alberca, terraza con asador, barra, baños, bocina y mobiliario para hasta 50 personas</p>
-                    <span class="promo-price">20% OFF</span>
+                    <p>Incluye alberca, terraza con asador, barra, baños, bocina y mobiliario </p>
+                    <span class="promo-price"> Hasta 50 personas</span>
                 </div>
             </div>
 
@@ -154,8 +154,8 @@
                 </div>
                 <div class="promo-content">
                     <h3>Salon completo</h3>
-                    <p>Incluye salón, alberca, jardín, cocina, terraza con asador, baños y espacio para hasta 200 personas</p>
-                    <span class="promo-price">Cotiza Ya</span>
+                    <p>Incluye salón, alberca, jardín, cocina, terraza con asador y baños</p>
+                    <span class="promo-price">Hasta 200 personas</span>
                 </div>
             </div>
         </div>
@@ -202,6 +202,54 @@
         </div>
     </section>
 
+    <section class="form-section fade-in" id="formulario">
+    <div class="form-container">
+        <h2>Solicita tu cotización</h2>
+        <p class="form-subtitle">Cuéntanos un poco sobre tu evento y nos pondremos en contacto contigo</p>
+
+        <form class="contact-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="evento">Tipo de evento</label>
+                    <select id="evento" name="evento" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="boda">Boda</option>
+                        <option value="xv">XV Años</option>
+                        <option value="cumple">Cumpleaños</option>
+                        <option value="corporativo">Evento corporativo</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="personas">Número de personas</label>
+                    <input type="number" id="personas" name="personas" placeholder="Ej. 100" min="1">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí los detalles de tu evento"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Enviar solicitud</button>
+            <p id="form-message" style="display:none; color: green; margin-top: 1rem; font-weight: bold; text-align:center;">
+    ¡Tu solicitud fue enviada correctamente! Nos pondremos en contacto contigo pronto.
+</p>
+        </form>
+    </div>
+</section>
+
     <!-- Contact Section -->
     <section class="contact fade-in" id="contacto">
         <div class="contact-container">
@@ -223,9 +271,16 @@
                     <div class="social-icon"><img src="imagenes/iconofacebook.webp" alt="FaceBook"></div>
                     <a href="https://www.facebook.com/share/1CfCWRKmfH/?mibextid=wwXIfr" target="_blank">Terraza Paraíso</a>
                 </div>
+                 <div class="contact-item">
+                    <a href="https://maps.app.goo.gl/d6CtL6HZdUcxMh66A" target="_blank">
+                    <div class="social-icon"><img src="imagenes/mapa.png" alt="Mapa"></div>
+                    <a href="https://maps.app.goo.gl/d6CtL6HZdUcxMh66A" target="_blank">Ver ubicacion en maps</a>
+                </div>
             </div>
         </div>
     </section>
+   
+
 
     <!-- Footer -->
     <footer>

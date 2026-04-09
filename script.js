@@ -53,3 +53,20 @@ document.addEventListener('click', (e) => {
         navLinks.classList.remove('active');
     }
 });
+
+const form = document.querySelector('.contact-form');
+const formMessage = document.getElementById('form-message');
+
+if (form) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        formMessage.style.display = 'block';
+
+        form.reset();
+
+        setTimeout(() => {
+            formMessage.style.display = 'none';
+        }, 5000);
+    });
+}
