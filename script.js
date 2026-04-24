@@ -283,16 +283,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         const btn = this.querySelector('.form-button');
-        btn.textContent = 'Enviando…';
+        const originalBtnText = btn.innerHTML;
+        
+        btn.innerHTML = '<span>Enviando…</span>';
         btn.disabled = true;
 
-        setTimeout(() => {
+        const formData = new FormData(form);
+        
+        fetch('/', {
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+            formMessage.classList.remove('hidden');
             formMessage.style.display = 'block';
             form.reset();
-            btn.textContent = 'Enviar solicitud';
+            btn.innerHTML = originalBtnText;
             btn.disabled = false;
-            setTimeout(() => { formMessage.style.display = 'none'; }, 5000);
-        }, 1000);
+            setTimeout(() => { 
+                formMessage.style.display = 'none'; 
+                formMessage.classList.add('hidden');
+            }, 5000);
+        })
+        .catch(error => {
+            alert('Hubo un error al enviar el formulario. Por favor intenta de nuevo.');
+            btn.innerHTML = originalBtnText;
+            btn.disabled = false;
+        });
     });
 })();
 
