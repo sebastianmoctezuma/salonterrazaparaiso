@@ -1,18 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terraza Paraíso - Salón y Alberca | Celebra tu Evento como Siempre lo Soñaste</title>
-    <meta name="description" content="Salón de eventos con alberca en Monterrey. Celebra bodas, XV años, eventos corporativos y más en Terraza Paraíso.">
+
+    <!-- ══ SEO Principal ══════════════════════════════════════════ -->
+    <title>Terraza Paraíso Huejutla | Salón de Eventos con Alberca en Huejutla de Reyes, Hidalgo</title>
+    <meta name="description"
+        content="Terraza Paraíso en Huejutla de Reyes, Hidalgo. Salón de eventos con alberca, jardín y terraza para bodas, XV años, cumpleaños y eventos corporativos. ¡Hasta 200 personas! Llámanos: 771 266 4272.">
+    <meta name="keywords"
+        content="salón de eventos Huejutla, salón con alberca Huejutla, Terraza Paraíso Huejutla, bodas Huejutla Hidalgo, XV años Huejutla, quinceañeras Huejutla, eventos Huejutla de Reyes, salón de fiestas Huejutla, alberca eventos Hidalgo, salon terraza paraiso huejutla">
+    <meta name="author" content="Terraza Paraíso">
+    <meta name="robots" content="index, follow">
+
+    <!-- ══ Geolocalización para búsquedas locales ══════════════════ -->
+    <meta name="geo.region" content="MX-HID">
+    <meta name="geo.placename" content="Huejutla de Reyes, Hidalgo, México">
+    <meta name="geo.position" content="21.1398;-98.4222">
+    <meta name="ICBM" content="21.1398, -98.4222">
+
+    <!-- ══ Open Graph (Facebook / WhatsApp compartir) ══════════════ -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="Terraza Paraíso Huejutla">
+    <meta property="og:title" content="Terraza Paraíso Huejutla | Salón de Eventos con Alberca en Huejutla, Hidalgo">
+    <meta property="og:description"
+        content="Celebra tu boda, XV años o cumpleaños en el mejor salón de Huejutla de Reyes, Hidalgo. Alberca, jardín y terraza. Hasta 200 personas. Tel: 771 266 4272.">
+    <meta property="og:image" content="imagenes/foto1.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Salón Terraza Paraíso con alberca en Huejutla, Hidalgo">
+
+    <!-- ══ Twitter Card ════════════════════════════════════════════ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Terraza Paraíso Huejutla | Salón con Alberca en Hidalgo">
+    <meta name="twitter:description"
+        content="El salón de eventos con alberca más completo de Huejutla de Reyes, Hidalgo. Bodas, XV años y más.">
+    <meta name="twitter:image" content="imagenes/foto1.jpeg">
+
+    <!-- ══ Schema.org JSON-LD — LocalBusiness (Google Knowledge Panel) ══ -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventVenue",
+      "name": "Terraza Paraíso",
+      "alternateName": ["Salón Terraza Paraíso", "Terraza Paraíso Huejutla", "Salon Terraza Paraiso"],
+      "description": "Salón de eventos con alberca, jardín y terraza en Huejutla de Reyes, Hidalgo. Ideal para bodas, XV años, cumpleaños y eventos corporativos.",
+      "telephone": "+527712664272",
+      "priceRange": "$$",
+      "image": "imagenes/foto1.jpeg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Huejutla de Reyes",
+        "addressRegion": "Hidalgo",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 21.1398,
+        "longitude": -98.4222
+      },
+      "sameAs": [
+        "https://www.instagram.com/terrazaparaiso_salon",
+        "https://www.facebook.com/share/1CfCWRKmfH/"
+      ],
+      "openingHoursSpecification": [{
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "09:00",
+        "closes": "22:00"
+      }],
+      "amenityFeature": [
+        {"@type": "LocationFeatureSpecification", "name": "Alberca",       "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Jardín",        "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Salón techado", "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Cocina",        "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Asador",        "value": true},
+        {"@type": "LocationFeatureSpecification", "name": "Audio/Bocina",  "value": true}
+      ],
+      "hasMap": "https://maps.app.goo.gl/d6CtL6HZdUcxMh66A"
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2c5530',
+                        'primary-light': '#3d7040',
+                        secondary: '#d4a574',
+                        'secondary-light': '#e8c49a',
+                        dark: '#0f0f0f',
+                        'dark-mid': '#1a1a1a',
+                        light: '#f9f6f2',
+                        accent: '#8b6f47',
+                        gold: '#c9a84c',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                    },
+                    boxShadow: {
+                        'sm': '0 4px 16px rgba(0, 0, 0, 0.08)',
+                        'md': '0 12px 40px rgba(0, 0, 0, 0.14)',
+                        'lg': '0 24px 64px rgba(0, 0, 0, 0.22)',
+                        'xl': '0 40px 80px rgba(0, 0, 0, 0.30)',
+                    },
+                    animation: {
+                        blob: "blob 20s infinite alternate",
+                        marquee: "marquee 40s linear infinite",
+                    },
+                    keyframes: {
+                        blob: {
+                            "0%": { transform: "translate(0px, 0px) scale(1)" },
+                            "33%": { transform: "translate(50px, -50px) scale(1.1)" },
+                            "66%": { transform: "translate(-40px, 20px) scale(0.9)" },
+                            "100%": { transform: "translate(0px, 0px) scale(1)" },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(calc(-50% - 0.75rem))' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .section-line {
+                @apply w-[60px] h-[3px] rounded-full mx-auto mb-10;
+                background: linear-gradient(90deg, #d4a574, #c9a84c);
+            }
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">✕</button>
+        <img src="" id="lightboxImg" alt="Imagen ampliada">
+    </div>
+
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-container">
             <img src="imagenes/logosalon.png" alt="Terraza Paraíso Logo" class="logo">
-            <div class="menu-toggle" onclick="toggleMenu()">
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,91 +170,244 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
+        <div class="hero-bg" id="heroBg"></div>
         <div class="hero-content">
-            <h1>Celebra tu Evento de forma inolvidable</h1>
-            <p class="subtitle">Vivelo en un espacio único con salón, alberca y jardín</p>
-            <a href="#contacto" class="cta-button">¡Contáctanos Ahora!</a>
+
+            <!-- Logo Header -->
+            <img src="imagenes/logosalon.png" alt="Terraza Paraíso Logo"
+                class="mx-auto h-[180px] md:h-[240px] mb-8 object-contain drop-shadow-2xl opacity-0 animate-[heroFadeUp_1s_cubic-bezier(0.16,1,0.3,1)_0.1s_forwards]">
+            <h1>Celebra tu Evento<br>de forma <em>inolvidable</em></h1>
+            <p class="subtitle">Vívelo en un espacio único con salón, alberca y jardín</p>
+
+            <a href="#contacto"
+                class="inline-flex items-center gap-3 px-11 py-4 bg-white/10 border border-white/30 backdrop-blur-md text-white rounded-none font-semibold text-base tracking-wider shadow-[0_8px_32px_rgba(0,0,0,0.3)] transition-all duration-500 hover:bg-white hover:text-primary hover:scale-105 hover:shadow-[0_0_50px_rgba(255,255,255,0.6)] group opacity-0 translate-y-[20px] animate-[heroFadeUp_1s_cubic-bezier(0.16,1,0.3,1)_1s_forwards]">
+                ¡Contáctanos Ahora!
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="w-[18px] h-[18px] transition-transform duration-300 group-hover:translate-x-1.5">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                </svg>
+            </a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about fade-in" id="nosotros">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>Terraza Paraíso</h2>
-                <p>Salón y Alberca que transforma tus momentos especiales en recuerdos inolvidables.</p>
-                <p>Con instalaciones de primera clase, incluyendo una hermosa alberca y espacios elegantemente diseñados, creamos el ambiente perfecto para bodas, XV años, eventos corporativos y celebraciones que quedarán grabadas en tu corazón.</p>
-                <p>Nuestro compromiso es hacer realidad la celebración que siempre imaginaste, cuidando cada detalle con la dedicación que tu evento merece.</p>
+    <section class="relative bg-light pt-16 pb-8 px-8 overflow-hidden" id="nosotros">
+        <!-- Decorative shapes -->
+        <div
+            class="absolute -top-[120px] -right-[120px] w-[400px] h-[400px] bg-[radial-gradient(circle,rgba(212,165,116,0.12)_0%,transparent_70%)] rounded-none pointer-events-none">
+        </div>
+        <div
+            class="absolute -bottom-[80px] -left-[80px] w-[300px] h-[300px] bg-[radial-gradient(circle,rgba(44,85,48,0.08)_0%,transparent_70%)] rounded-none pointer-events-none">
+        </div>
+
+        <div class="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-20 items-center relative z-10">
+            <div data-reveal="left">
+                <div
+                    class="inline-flex items-center gap-2.5 text-[0.8rem] font-semibold tracking-[0.14em] uppercase text-secondary mb-4 before:content-[''] before:w-7 before:h-0.5 before:bg-secondary before:rounded-sm">
+                    Nuestra historia</div>
+                <h2 class="font-serif text-[clamp(2.2rem,4vw,3.4rem)] text-dark leading-tight mb-7">Terraza Paraíso</h2>
+                <p class="text-[1.05rem] leading-relaxed text-[#555] mb-5">Salón y Alberca que transforma tus momentos
+                    especiales en recuerdos inolvidables.</p>
+                <p class="text-[1.05rem] leading-relaxed text-[#555] mb-5">Con instalaciones de primera clase,
+                    incluyendo una hermosa alberca y espacios elegantemente diseñados, creamos el ambiente perfecto para
+                    bodas, XV años, eventos corporativos y celebraciones que quedarán grabadas en tu corazón.</p>
+                <p class="text-[1.05rem] leading-relaxed text-[#555] mb-5">Nuestro compromiso es hacer realidad la
+                    celebración que siempre imaginaste, cuidando cada detalle con la dedicación que tu evento merece.
+                </p>
+                <div class="flex flex-wrap gap-3 mt-7">
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-primary/20 rounded-none text-[0.85rem] font-medium text-primary shadow-sm hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 before:content-['✓'] before:text-xs">Salón
+                        Techado</span>
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-primary/20 rounded-none text-[0.85rem] font-medium text-primary shadow-sm hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 before:content-['✓'] before:text-xs">Alberca
+                        Privada</span>
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-primary/20 rounded-none text-[0.85rem] font-medium text-primary shadow-sm hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 before:content-['✓'] before:text-xs">Jardín
+                        Amplio</span>
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-primary/20 rounded-none text-[0.85rem] font-medium text-primary shadow-sm hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 before:content-['✓'] before:text-xs">Cocina
+                        Equipada</span>
+                    <span
+                        class="inline-flex items-center gap-2 px-4 py-2 bg-white border border-primary/20 rounded-none text-[0.85rem] font-medium text-primary shadow-sm hover:bg-primary hover:text-white hover:-translate-y-0.5 hover:shadow-md transition-all duration-300 before:content-['✓'] before:text-xs">Audio
+                        Profesional</span>
+                </div>
             </div>
-            <div class="about-image">
-                <img src="imagenes/foto2.jpeg" alt="Instalaciones Terraza Paraíso">
+
+            <div class="relative group" data-reveal="right">
+                <div
+                    class="absolute -top-5 -right-5 w-full h-full border-2 border-secondary rounded-none opacity-40 transition-transform duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-x-1.5 group-hover:translate-y-1.5 group-hover:scale-[1.01]">
+                </div>
+                <div
+                    class="rounded-none overflow-hidden shadow-xl transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.015] group-hover:rotate-[0.5deg]">
+                    <img src="imagenes/foto2.jpeg" alt="Instalaciones Terraza Paraíso"
+                        class="w-full h-[500px] object-cover">
+                </div>
+
+                <div
+                    class="absolute -bottom-6 -left-8 bg-white rounded-none py-5 px-7 shadow-lg gap-8 z-10 animate-[floatCard_4s_ease-in-out_infinite] hidden md:flex">
+                    <div class="text-center">
+                        <span class="block font-serif text-[2.2rem] font-semibold text-primary leading-none"
+                            data-counter="200">0</span>
+                        <span class="text-[0.75rem] font-medium text-[#888] uppercase tracking-[0.08em]">Personas</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block font-serif text-[2.2rem] font-semibold text-primary leading-none"
+                            data-counter="4">0</span>
+                        <span class="text-[0.75rem] font-medium text-[#888] uppercase tracking-[0.08em]">Paquetes</span>
+                    </div>
+                    <div class="text-center">
+                        <span class="block font-serif text-[2.2rem] font-semibold text-primary leading-none"
+                            data-counter="6">0</span>
+                        <span
+                            class="text-[0.75rem] font-medium text-[#888] uppercase tracking-[0.08em]">Servicios</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
     <!-- Gallery Section -->
-    <section class="gallery fade-in" id="galeria">
-        <h2>Nuestras Instalaciones</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="imagenes/foto1.jpeg" alt="Salón principal">
-                <div class="gallery-overlay">
-                    <h3>Salón Principal</h3>
-                    <p>Espacios amplios y elegantes para tu evento</p>
-                </div>
+    <section class="gallery relative overflow-hidden bg-light" id="galeria">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            <div
+                class="absolute -top-[10%] -left-[10%] w-[600px] h-[600px] rounded-none bg-secondary/15 blur-[120px] animate-blob">
             </div>
-            <div class="gallery-item">
-                <img src="imagenes/foto2.jpeg" alt="Área de eventos">
-                <div class="gallery-overlay">
-                    <h3>Área de Eventos</h3>
-                    <p>Diseñado para crear experiencias memorables</p>
-                </div>
+            <div class="absolute top-[20%] -right-[10%] w-[700px] h-[700px] rounded-none bg-primary/10 blur-[150px] animate-blob"
+                style="animation-delay: 5s"></div>
+            <div class="absolute -bottom-[20%] left-[20%] w-[500px] h-[500px] rounded-none bg-gold/10 blur-[100px] animate-blob"
+                style="animation-delay: 10s"></div>
+        </div>
+
+        <div class="relative z-10">
+            <div class="section-header" data-reveal="up">
+                <span class="section-tag">Espacios</span>
+                <h2>Nuestras Instalaciones</h2>
+                <div class="section-line"></div>
+                <p>Conoce cada rincón diseñado para que tu celebración sea perfecta</p>
             </div>
-            <div class="gallery-item">
-                <img src="imagenes/foto3.jpeg" alt="Alberca">
-                <div class="gallery-overlay">
-                    <h3>Alberca</h3>
-                    <p>Disfruta de nuestras instalaciones al aire libre</p>
+            <div class="relative w-full max-w-[100vw] mx-auto overflow-hidden py-10 pb-16">
+                <!-- Fade masks on edges -->
+                <div
+                    class="absolute top-0 left-0 w-16 md:w-32 h-full bg-gradient-to-r from-light to-transparent z-20 pointer-events-none">
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="imagenes/foto4.jpeg" alt="Espacios versátiles">
-                <div class="gallery-overlay">
-                    <h3>Espacios Versátiles</h3>
-                    <p>Adaptamos el ambiente a tus necesidades</p>
+                <div
+                    class="absolute top-0 right-0 w-16 md:w-32 h-full bg-gradient-to-l from-light to-transparent z-20 pointer-events-none">
                 </div>
-            </div>
-            <div class="gallery-item">
-                <img src="imagenes/imagen5.jpeg" alt="Montaje elegante">
-                <div class="gallery-overlay">
-                    <h3>Montaje elegante</h3>
-                    <p>Creamos ambientes unicos para cada ocasion</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="imagenes/imagen6.jpeg" alt="Eventos nocturnos">
-                <div class="gallery-overlay">
-                    <h3>Eventos nocturnos</h3>
-                    <p>Ambiente elegante para celebrar tus mejores momentos</p>
+
+                <div class="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused] transition-all">
+
+                    <!-- Set 1 -->
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto1.jpeg" alt="Salón principal">
+                        <div class="gallery-overlay">
+                            <h3>Salón Principal</h3>
+                            <p>Espacios amplios y elegantes para tu evento</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto2.jpeg" alt="Área de eventos">
+                        <div class="gallery-overlay">
+                            <h3>Área de Eventos</h3>
+                            <p>Diseñado para crear experiencias memorables</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto3.jpeg" alt="Alberca">
+                        <div class="gallery-overlay">
+                            <h3>Alberca</h3>
+                            <p>Disfruta de nuestras instalaciones al aire libre</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto4.jpeg" alt="Espacios versátiles">
+                        <div class="gallery-overlay">
+                            <h3>Espacios Versátiles</h3>
+                            <p>Adaptamos el ambiente a tus necesidades</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/imagen5.jpeg" alt="Montaje elegante">
+                        <div class="gallery-overlay">
+                            <h3>Montaje elegante</h3>
+                            <p>Creamos ambientes únicos para cada ocasión</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/imagen6.jpeg" alt="Eventos nocturnos">
+                        <div class="gallery-overlay">
+                            <h3>Eventos nocturnos</h3>
+                            <p>Ambiente elegante para celebrar tus mejores momentos</p>
+                        </div>
+                    </div>
+
+                    <!-- Set 2 (Duplicated for infinite scroll) -->
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto1.jpeg" alt="Salón principal">
+                        <div class="gallery-overlay">
+                            <h3>Salón Principal</h3>
+                            <p>Espacios amplios y elegantes para tu evento</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto2.jpeg" alt="Área de eventos">
+                        <div class="gallery-overlay">
+                            <h3>Área de Eventos</h3>
+                            <p>Diseñado para crear experiencias memorables</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto3.jpeg" alt="Alberca">
+                        <div class="gallery-overlay">
+                            <h3>Alberca</h3>
+                            <p>Disfruta de nuestras instalaciones al aire libre</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/foto4.jpeg" alt="Espacios versátiles">
+                        <div class="gallery-overlay">
+                            <h3>Espacios Versátiles</h3>
+                            <p>Adaptamos el ambiente a tus necesidades</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/imagen5.jpeg" alt="Montaje elegante">
+                        <div class="gallery-overlay">
+                            <h3>Montaje elegante</h3>
+                            <p>Creamos ambientes únicos para cada ocasión</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item w-[320px] md:w-[400px] h-[260px] md:h-[300px] shrink-0">
+                        <img src="imagenes/imagen6.jpeg" alt="Eventos nocturnos">
+                        <div class="gallery-overlay">
+                            <h3>Eventos nocturnos</h3>
+                            <p>Ambiente elegante para celebrar tus mejores momentos</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Promotions Section -->
-    <section class="promotions fade-in" id="promociones">
-        <h2>Nuestros paquetes</h2>
-        <p class="promotions-subtitle">¡Aprovecha nuestros paquetes !</p>
-        
-        <div class="promotions-grid">
+    <section class="promotions" id="promociones">
+        <div class="section-header" data-reveal="up">
+            <span class="section-tag">Paquetes</span>
+            <h2>Nuestros paquetes</h2>
+            <div class="section-line"></div>
+            <p class="promotions-subtitle">¡Aprovecha nuestros paquetes!</p>
+        </div>
+
+        <div class="promotions-grid" data-stagger>
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo1.jpg" alt="Promoción 1">
                     <div class="promo-badge">Ideal para eventos</div>
                 </div>
                 <div class="promo-content">
-                    <h3>Salon + area verde</h3>
-                    <p>Incluye salón techado, jardín, baños, cocina, enfriador y bocina </p>
+                    <h3>Salón + área verde</h3>
+                    <p>Incluye salón techado, jardín, baños, cocina, enfriador y bocina</p>
                     <span class="promo-price">Hasta 180 personas</span>
                 </div>
             </div>
@@ -122,10 +415,10 @@
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo2.jpg" alt="Promoción 2">
-                    <div class="promo-badge">Mas solicitado</div>
+                    <div class="promo-badge">Más solicitado</div>
                 </div>
                 <div class="promo-content">
-                    <h3>Alberca + area verde</h3>
+                    <h3>Alberca + área verde</h3>
                     <p>Incluye alberca, jardín, terraza con asador, barra, baños y mobiliario</p>
                     <span class="promo-price">Hasta 80 personas</span>
                 </div>
@@ -134,11 +427,11 @@
             <div class="promo-card">
                 <div class="promo-image">
                     <img src="imagenes/promo3.jpg" alt="Promoción 3">
-                    <div class="promo-badge">Momentos unicos</div>
+                    <div class="promo-badge">Momentos únicos</div>
                 </div>
                 <div class="promo-content">
                     <h3>Paquete alberca</h3>
-                    <p>Incluye alberca, terraza con asador, barra, baños, bocina y mobiliario </p>
+                    <p>Incluye alberca, terraza con asador, barra, baños, bocina y mobiliario</p>
                     <span class="promo-price">Hasta 50 personas</span>
                 </div>
             </div>
@@ -149,22 +442,32 @@
                     <div class="promo-badge">Experiencia premium</div>
                 </div>
                 <div class="promo-content">
-                    <h3>Salon completo</h3>
+                    <h3>Salón completo</h3>
                     <p>Incluye salón, alberca, jardín, cocina, terraza con asador y baños</p>
                     <span class="promo-price">Hasta 200 personas</span>
                 </div>
             </div>
         </div>
 
-        <div class="promo-cta">
-            <a href="#contacto" class="cta-button">Consultar Paquetes</a>
+        <div class="promo-cta" data-reveal="up">
+            <a href="#contacto" class="cta-button">Consultar Paquetes
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                </svg>
+            </a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="services fade-in" id="servicios">
-        <h2>Servicios que Ofrecemos</h2>
-        <div class="services-grid">
+    <section class="services" id="servicios">
+        <div class="section-header" data-reveal="up">
+            <span class="section-tag">Lo que ofrecemos</span>
+            <h2>Servicios que Ofrecemos</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="services-grid" data-stagger>
             <div class="service-card">
                 <div class="service-icon"><img src="imagenes/anillo.png" alt="Anillo"></div>
                 <h3>Bodas</h3>
@@ -198,106 +501,156 @@
         </div>
     </section>
 
-    <!-- Form Section -->
-    <section class="form-section fade-in" id="formulario">
-        <div class="form-container">
-            <h2>Solicita tu cotización</h2>
-            <p class="form-subtitle">Cuéntanos un poco sobre tu evento y nos pondremos en contacto contigo</p>
-
-            <form class="contact-form" name="cotizacion" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="cotizacion">
-                
-                <p style="display: none;">
-                    <label>No llenar esto: <input name="bot-field"></label>
-                </p>
-
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="evento">Tipo de evento</label>
-                        <select id="evento" name="evento" required>
-                            <option value="">Selecciona una opción</option>
-                            <option value="boda">Boda</option>
-                            <option value="xv">XV Años</option>
-                            <option value="cumple">Cumpleaños</option>
-                            <option value="corporativo">Evento corporativo</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="personas">Número de personas</label>
-                        <input type="number" id="personas" name="personas" placeholder="Ej. 100" min="1">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí los detalles de tu evento"></textarea>
-                </div>
-
-                <button type="submit" class="form-button">Enviar solicitud</button>
-
-                <p id="form-message" style="display:none; margin-top: 1rem; font-weight: bold; text-align:center;">
-                    ¡Tu solicitud fue enviada correctamente! Nos pondremos en contacto contigo pronto.
-                </p>
-            </form>
+    <!-- Contact & Form Section -->
+    <section class="contact relative bg-dark text-white pt-12 pb-28 px-4 sm:px-8 overflow-hidden" id="contacto">
+        <!-- Decorative Background -->
+        <div
+            class="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary/10 rounded-none blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none">
         </div>
-    </section>
+        <div
+            class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/10 rounded-none blur-[120px] translate-y-1/3 -translate-x-1/3 pointer-events-none">
+        </div>
 
-    <!-- Contact Section -->
-    <section class="contact fade-in" id="contacto">
-        <div class="contact-container">
-            <h2>¡Contáctanos!</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 2rem;">Estamos listos para hacer realidad el evento de tus sueños</p>
+        <div class="max-w-[1200px] mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-[clamp(2.5rem,5vw,3.5rem)] mb-4 leading-tight" data-reveal="up">¡Contáctanos!
+                </h2>
+                <p class="text-[1.1rem] text-white/65 max-w-xl mx-auto" data-reveal="up">Estamos listos para hacer
+                    realidad el evento de tus sueños. Solicita tu cotización o escríbenos directamente.</p>
+            </div>
 
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="social-icon">
-                        <img src="imagenes/iconowhatsap.png" alt="WhatsApp">
-                    </div>
-                    <a href="https://wa.me/527712664272" target="_blank">771 266 4272</a>
+            <div class="grid lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-start">
+
+                <!-- Glassmorphism Form -->
+                <div class="bg-white/5 border border-white/10 rounded-none p-6 sm:p-7 backdrop-blur-xl shadow-2xl relative overflow-hidden"
+                    data-reveal="left">
+                    <form class="contact-form relative z-10" name="cotizacion" method="POST" data-netlify="true"
+                        netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="cotizacion">
+                        <p class="hidden"><label>No llenar esto: <input name="bot-field"></label></p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+                            <div>
+                                <label for="nombre" class="block text-white/80 text-sm font-medium mb-2">Nombre
+                                    completo</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required
+                                    class="w-full bg-white/5 border border-white/10 text-white placeholder-white/30 rounded-none px-4 py-2.5 focus:outline-none focus:border-secondary focus:bg-white/10 transition-all">
+                            </div>
+                            <div>
+                                <label for="telefono"
+                                    class="block text-white/80 text-sm font-medium mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required
+                                    class="w-full bg-white/5 border border-white/10 text-white placeholder-white/30 rounded-none px-4 py-2.5 focus:outline-none focus:border-secondary focus:bg-white/10 transition-all">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
+                            <div>
+                                <label for="evento" class="block text-white/80 text-sm font-medium mb-2">Tipo de
+                                    evento</label>
+                                <select id="evento" name="evento" required
+                                    class="w-full bg-[#1a1a1a] border border-white/10 text-white rounded-none px-4 py-2.5 focus:outline-none focus:border-secondary transition-all appearance-none">
+                                    <option value="" disabled selected>Selecciona una opción</option>
+                                    <option value="boda">Boda</option>
+                                    <option value="xv">XV Años</option>
+                                    <option value="cumple">Cumpleaños</option>
+                                    <option value="corporativo">Evento corporativo</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="personas" class="block text-white/80 text-sm font-medium mb-2">No. de
+                                    personas</label>
+                                <input type="number" id="personas" name="personas" placeholder="Ej. 100" min="1"
+                                    class="w-full bg-white/5 border border-white/10 text-white placeholder-white/30 rounded-none px-4 py-2.5 focus:outline-none focus:border-secondary focus:bg-white/10 transition-all">
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="mensaje" class="block text-white/80 text-sm font-medium mb-2">Mensaje o
+                                detalles</label>
+                            <textarea id="mensaje" name="mensaje" rows="2"
+                                placeholder="Cuéntanos más sobre tu evento..."
+                                class="w-full bg-white/5 border border-white/10 text-white placeholder-white/30 rounded-none px-4 py-2.5 focus:outline-none focus:border-secondary focus:bg-white/10 transition-all resize-none"></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full form-button bg-gradient-to-r from-secondary to-gold text-white font-semibold tracking-wide py-3 rounded-none shadow-[0_8px_32px_rgba(212,165,116,0.25)] hover:shadow-[0_12px_40px_rgba(212,165,116,0.45)] hover:-translate-y-1 transition-all duration-300 flex justify-center items-center gap-2">
+                            <span>Solicitar Cotización</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
+                        </button>
+
+                        <p id="form-message"
+                            class="hidden mt-4 text-center text-green-400 font-medium bg-green-400/10 py-3 rounded-none border border-green-400/20">
+                            ¡Solicitud enviada! Nos pondremos en contacto pronto.
+                        </p>
+                    </form>
                 </div>
 
-                <div class="contact-item">
-                    <div class="social-icon">
-                        <img src="imagenes/iconoig.png" alt="Instagram">
-                    </div>
-                    <a href="https://www.instagram.com/terrazaparaiso_salon?igsh=ano3dzRvZzM3dnJq" target="_blank">@salonterraza_paraiso</a>
-                </div>
+                <!-- Social Info Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5" data-reveal="right">
 
-                <div class="contact-item">
-                    <div class="social-icon">
-                        <img src="imagenes/iconofacebook.webp" alt="Facebook">
-                    </div>
-                    <a href="https://www.facebook.com/share/1CfCWRKmfH/?mibextid=wwXIfr" target="_blank">Terraza Paraíso</a>
-                </div>
+                    <a href="https://wa.me/527712664272" target="_blank"
+                        class="flex flex-col items-center justify-center gap-2 p-4 h-[190px] bg-white/5 border border-white/10 rounded-xl backdrop-blur-md transition-all duration-400 ease-out hover:bg-secondary/15 hover:border-secondary/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] group">
+                        <div
+                            class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center transition-all duration-400 ease-out group-hover:bg-secondary group-hover:scale-110 group-hover:shadow-[0_8px_24px_rgba(212,165,116,0.4)]">
+                            <img src="imagenes/iconowhatsap.png" alt="WhatsApp" class="w-9 h-9 object-contain">
+                        </div>
+                        <span
+                            class="text-white/90 font-medium group-hover:text-secondary-light transition-colors text-[0.95rem]">WhatsApp</span>
+                        <span class="text-white/50 text-sm -mt-2">+52 771 266 4272</span>
+                    </a>
 
-                <div class="contact-item">
-                    <div class="social-icon">
-                        <img src="imagenes/mapa.png" alt="Mapa">
-                    </div>
-                    <a href="https://maps.app.goo.gl/d6CtL6HZdUcxMh66A" target="_blank">Ver ubicacion en maps</a>
+                    <a href="https://www.instagram.com/terrazaparaiso_salon?igsh=ano3dzRvZzM3dnJq" target="_blank"
+                        class="flex flex-col items-center justify-center gap-2 p-4 h-[190px] bg-white/5 border border-white/10 rounded-xl backdrop-blur-md transition-all duration-400 ease-out hover:bg-secondary/15 hover:border-secondary/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] group">
+                        <div
+                            class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center transition-all duration-400 ease-out group-hover:bg-secondary group-hover:scale-110 group-hover:shadow-[0_8px_24px_rgba(212,165,116,0.4)]">
+                            <img src="imagenes/iconoig.png" alt="Instagram" class="w-9 h-9 object-contain">
+                        </div>
+                        <span
+                            class="text-white/90 font-medium group-hover:text-secondary-light transition-colors text-[0.95rem]">Instagram</span>
+                        <span class="text-white/50 text-sm -mt-2">@salonterraza_paraiso</span>
+                    </a>
+
+                    <a href="https://www.facebook.com/share/1CfCWRKmfH/?mibextid=wwXIfr" target="_blank"
+                        class="flex flex-col items-center justify-center gap-2 p-4 h-[190px] bg-white/5 border border-white/10 rounded-xl backdrop-blur-md transition-all duration-400 ease-out hover:bg-secondary/15 hover:border-secondary/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] group">
+                        <div
+                            class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center transition-all duration-400 ease-out group-hover:bg-secondary group-hover:scale-110 group-hover:shadow-[0_8px_24px_rgba(212,165,116,0.4)]">
+                            <img src="imagenes/iconofacebook.webp" alt="Facebook" class="w-9 h-9 object-contain">
+                        </div>
+                        <span
+                            class="text-white/90 font-medium group-hover:text-secondary-light transition-colors text-[0.95rem]">Facebook</span>
+                        <span class="text-white/50 text-sm -mt-2">Terraza Paraíso</span>
+                    </a>
+
+                    <a href="https://maps.app.goo.gl/d6CtL6HZdUcxMh66A" target="_blank"
+                        class="flex flex-col items-center justify-center gap-2 p-4 h-[190px] bg-white/5 border border-white/10 rounded-xl backdrop-blur-md transition-all duration-400 ease-out hover:bg-secondary/15 hover:border-secondary/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] group">
+                        <div
+                            class="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center transition-all duration-400 ease-out group-hover:bg-secondary group-hover:scale-110 group-hover:shadow-[0_8px_24px_rgba(212,165,116,0.4)]">
+                            <img src="imagenes/mapa.png" alt="Mapa" class="w-9 h-9 object-contain">
+                        </div>
+                        <span
+                            class="text-white/90 font-medium group-hover:text-secondary-light transition-colors text-[0.95rem]">Ubicación</span>
+                        <span class="text-white/50 text-sm -mt-2 text-center">Paraíso de las Huastecas, 43000 Huejutla
+                            de Reyes,
+                            Hgo.</span>
+                    </a>
+
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Terraza Paraíso - Salón y Alberca. Todos los derechos reservados.</p>
+    <footer class="bg-[#060606] text-white/35 text-center p-8 text-sm tracking-[0.03em]">
+        <p>© 2026 <span class="text-secondary font-medium">Terraza Paraíso</span> - Salón y Alberca. Todos los derechos
+            reservados.</p>
         <p>Haciendo realidad los eventos que siempre soñaste</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
